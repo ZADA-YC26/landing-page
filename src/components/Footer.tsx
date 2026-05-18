@@ -52,7 +52,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-xs">
             <a href="#" className="flex items-center gap-2.5 cursor-pointer mb-4">
-              <img src="/zada-icon.svg" alt="Zada" width={28} height={28} className="object-contain" />
+              <img src={`${import.meta.env.BASE_URL}zada-icon.svg`} alt="Zada" width={28} height={28} className="object-contain" />
               <span className="font-heading font-bold text-white text-lg">Zada</span>
             </a>
             <p className="text-muted text-sm leading-relaxed">

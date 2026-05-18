@@ -195,7 +195,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-2 bg-acid-lime text-near-black text-sm font-heading font-bold px-7 py-3.5 rounded-2xl cursor-pointer transition-all duration-200"
               >
-                <img src="/zada-icon.png" alt="" width={18} height={18} className="object-contain" />
+                <img src={`${import.meta.env.BASE_URL}zada-icon.png`} alt="" width={18} height={18} className="object-contain" />
                 Get Early Access
               </motion.a>
               <motion.a

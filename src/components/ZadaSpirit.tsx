@@ -46,7 +46,7 @@ export default function ZadaSpirit({
       />
       {/* Icon with 3-layer drop-shadow */}
       <img
-        src="/zada-icon.svg"
+        src={`${import.meta.env.BASE_URL}zada-icon.svg`}
         alt=""
         style={{
           width: size,
