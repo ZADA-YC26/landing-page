@@ -5,7 +5,7 @@ import * as THREE from 'three'
 
 /* ── Loaded GLTF (may be empty — scaffold is future-proof) ── */
 function GltfModel() {
-  const { scene } = useGLTF('/3d_model.gltf')
+  const { scene } = useGLTF(`${import.meta.env.BASE_URL}3d_model.gltf`)
 
   // Count real mesh nodes
   let meshCount = 0
@@ -254,4 +254,4 @@ export default function HeroScene() {
   )
 }
 
-useGLTF.preload('/3d_model.gltf')
+useGLTF.preload(`${import.meta.env.BASE_URL}3d_model.gltf`)
