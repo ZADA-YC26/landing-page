@@ -103,7 +103,7 @@ function RankSpirit({ rank, size = 52 }: { rank: (typeof RANKS)[0]; size?: numbe
 
       {/* The Zada icon */}
       <img
-        src={`${import.meta.env.BASE_URL}zada-icon.svg`}
+        src={`${import.meta.env.BASE_URL}favicon.png`}
         alt=""
         style={{
           width: size,

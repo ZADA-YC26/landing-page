@@ -26,18 +26,17 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
     >
       <nav
-        className={`w-full max-w-5xl rounded-2xl transition-all duration-500 ${
-          scrolled
-            ? 'bg-s1/80 backdrop-blur-2xl border border-s3/50 shadow-[0_8px_32px_rgba(0,0,0,0.6)]'
-            : 'bg-s1/30 backdrop-blur-md border border-white/5'
-        }`}
+        className={`w-full max-w-5xl rounded-2xl transition-all duration-500 ${scrolled
+          ? 'bg-s1/80 backdrop-blur-2xl border border-s3/50 shadow-[0_8px_32px_rgba(0,0,0,0.6)]'
+          : 'bg-s1/30 backdrop-blur-md border border-white/5'
+          }`}
       >
         {/* 3-column grid: logo | links | cta */}
         <div className="grid grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-3">
 
           {/* Left: Logo */}
           <a href="#" className="flex items-center gap-2.5 cursor-pointer flex-shrink-0">
-            <img src={`${import.meta.env.BASE_URL}zada-icon.svg`} alt="Zada" width={30} height={30} className="object-contain" style={{ filter: 'drop-shadow(0 0 6px rgba(204,255,0,0.5)) drop-shadow(0 0 12px rgba(204,255,0,0.2))' }} />
+            <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="Zada" width={30} height={30} className="object-contain" style={{ filter: 'drop-shadow(0 0 6px rgba(204,255,0,0.5)) drop-shadow(0 0 12px rgba(204,255,0,0.2))' }} />
             <span className="font-heading font-bold text-white text-[17px] tracking-tight">Zada</span>
           </a>
 

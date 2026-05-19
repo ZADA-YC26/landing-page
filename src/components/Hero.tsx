@@ -157,13 +157,12 @@ export default function Hero() {
                 <motion.span
                   key={word + i}
                   variants={wordVariants}
-                  className={`inline-block mr-[0.25em] ${
-                    i === 3
+                  className={`inline-block mr-[0.25em] ${i === 3
                       ? 'bg-gradient-to-r from-acid-lime via-neon-cyan to-electric-violet bg-clip-text text-transparent animate-shimmer'
                       : i === 1
-                      ? 'text-white/30'
-                      : 'text-white'
-                  }`}
+                        ? 'text-white/30'
+                        : 'text-white'
+                    }`}
                   style={i === 3 ? { backgroundSize: '300% 100%' } : {}}
                 >
                   {word}
@@ -195,7 +194,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-2 bg-acid-lime text-near-black text-sm font-heading font-bold px-7 py-3.5 rounded-2xl cursor-pointer transition-all duration-200"
               >
-                <img src={`${import.meta.env.BASE_URL}zada-icon.png`} alt="" width={18} height={18} className="object-contain" />
+                <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="" width={18} height={18} className="object-contain" />
                 Get Early Access
               </motion.a>
               <motion.a
@@ -206,7 +205,7 @@ export default function Hero() {
               >
                 See how it works
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </motion.a>
             </motion.div>
