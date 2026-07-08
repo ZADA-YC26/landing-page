@@ -153,7 +153,7 @@
   const dare = DARES[Math.floor(Math.random() * DARES.length)];
   document.getElementById("dareText").textContent = dare.text;
 
-  const redirectUrl = TALLY_URL + "?dare=" + encodeURIComponent(dare.id);
+  const redirectUrl = TALLY_URL + "?challenge=" + encodeURIComponent(dare.id);
   document.getElementById("submitBtn").addEventListener("click", function () {
     window.location.href = redirectUrl;
   });
